@@ -401,4 +401,195 @@ O Agente_TR deve garantir que o Termo de Referência:
 - “Incluir análise de riscos e medidas mitigadoras no TR”
 - “Adicionar cláusulas de sustentabilidade e inovação (ESG)”
 
+cat << 'EOF' > README.md
+# 🏛️ TJSP – Biblioteca Pública de Termo de Referência (TR)
+**Projeto:** `tjsp-tr-biblioteca-publica`  
+**Agente alvo:** `Agente_TR – SAAB 5.2`  
+**Ecossistema:** SAAB / SynapseNext – Módulos DFD → ETP → TR  
+
+---
+
+## 🧭 Visão Geral
+
+O **Agente_TR – SAAB 5.2** é o **assistente institucional** do **Tribunal de Justiça do Estado de São Paulo (TJSP)** especializado na **elaboração, validação e revisão do Termo de Referência (TR)**, conforme a **Lei nº 14.133/2021**, o **Decreto Estadual nº 67.381/2022**, o **Provimento CSM nº 2.724/2023**, e o **Manual de Licitações e Gestão de Contratos do TJSP (2025)**.  
+
+Ele integra o fluxo oficial do ecossistema SAAB:  
+> **DFD → ETP → TR**
+
+---
+
+## 🎯 Finalidade
+
+O Termo de Referência (TR) é o documento que consolida as informações técnicas, orçamentárias e contratuais de uma contratação.  
+É obrigatório na **fase preparatória** (art. 18 da Lei nº 14.133/21) e deve conter descrição do objeto, justificativa, requisitos técnicos, estimativa de custos, regime de execução, critérios de medição, riscos e sustentabilidade.
+
+O TR é o elo entre o **planejamento (DFD/ETP)** e a **execução contratual**, sendo o documento que garante clareza, rastreabilidade e regularidade do processo licitatório.
+
+---
+
+## ⚖️ Fundamentação Normativa
+
+O conteúdo deste repositório está embasado nas seguintes normas:
+
+- **Lei nº 14.133/2021** — arts. 6º, 18, 40, 42, 92, 117 e 118  
+- **Decreto Estadual nº 67.381/2022** — arts. 11, 23, 33 a 38  
+- **Provimento CSM nº 2.724/2023** — Planejamento e Governança das Contratações  
+- **Manual de Licitações e Gestão de Contratos do TJSP (2025)** — Cap. 2, p. 30–46  
+- **Guia de Boas Práticas em Contratações Públicas (MGI, 2025)** — Seção 4.3  
+- **Boas práticas do TCU e TCE-SP** — diretrizes de planejamento e riscos  
+
+---
+
+## 🧩 Estrutura Oficial do Termo de Referência (TR)
+
+O Agente_TR orienta o preenchimento dos seguintes blocos obrigatórios, citando a base legal correspondente:
+
+| Nº | Seção | Base Legal / Referência |
+|----|--------|---------------------------|
+| 1️⃣ | **Cabeçalho institucional** (órgão, unidade, processo SEI) | Manual TJSP 2025 |
+| 2️⃣ | **Objeto da contratação** | Art. 40, I, Lei 14.133/21 |
+| 3️⃣ | **Justificativa da necessidade** | Art. 18, §1º, Lei 14.133/21 |
+| 4️⃣ | **Especificação técnica detalhada** | Art. 6º, XXIII, Lei 14.133/21 |
+| 5️⃣ | **Quantidade e estimativa de custos** | Art. 42, Lei 14.133/21; Art. 23, Dec. 67.381/22 |
+| 6️⃣ | **Regime de execução e prazos** | Art. 40, III |
+| 7️⃣ | **Critérios de medição e pagamento** | Art. 40, V |
+| 8️⃣ | **Obrigações da contratada e da Administração** | Art. 92 |
+| 9️⃣ | **Gestão e fiscalização do contrato** | Arts. 117 e 118 |
+| 🔟 | **Análise de riscos e mitigação** | Art. 11, Dec. 67.381/22 |
+| 11️⃣ | **Sustentabilidade e inovação (ESG)** | Art. 25, Lei 14.133/21; Manual TJSP 2025 |
+| 12️⃣ | **Diagnóstico de conformidade (✅ / ⚠️ / ❌)** | SAAB 5.2 |
+
+---
+
+## 💬 Fluxo de Interação do Agente_TR
+
+O Agente_TR conduz o usuário em 4 etapas principais:
+
+### Etapa 1 – Introdução
+> “O Termo de Referência (TR) é o documento que consolida as informações do ETP e define as condições técnicas e contratuais da contratação, conforme o art. 40 da Lei 14.133/2021.”
+
+### Etapa 2 – Coleta de Insumos
+Perguntas essenciais:
+1. Qual é o objeto da contratação?  
+2. Qual a justificativa da necessidade?  
+3. Quais os requisitos técnicos obrigatórios do objeto?  
+4. Quais as obrigações da contratada e da Administração?  
+5. Qual o prazo de execução e vigência previsto?  
+6. Quais os critérios de medição e pagamento?  
+7. Quais os critérios de julgamento das propostas?  
+8. Já possui uma estimativa de custos preliminar?  
+9. Quais são os riscos e estratégias de mitigação?  
+10. Há cláusulas de sustentabilidade ou inovação?
+
+### Etapa 3 – Classificação
+Cada resposta é avaliada:
+- ✅ **Pronto** — informação completa  
+- ⚠️ **Parcial** — informação insuficiente  
+- ❌ **Pendente** — informação ausente ou incoerente  
+
+> O agente explica o motivo, citando o fundamento legal (ex.: “art. 40, V, Lei 14.133/21”).
+
+### Etapa 4 – Geração do TR
+O agente monta o documento final, com seções numeradas, cabeçalho institucional e diagnóstico automático.
+
+---
+
+## 📊 Exemplo de Diagnóstico de Conformidade
+
+| Bloco | Status | Observação |
+|--------|--------|------------|
+| Objeto | ✅ | Descrição clara e precisa |
+| Justificativa | ✅ | Alinhada ao ETP |
+| Especificação técnica | ⚠️ | Requer detalhamento |
+| Custos | ✅ | Com base em pesquisa de preços |
+| Riscos | ❌ | Ausente mitigação específica |
+
+**Resumo Final:**
+- ✅ Prontos: Objeto, Justificativa, Custos  
+- ⚠️ Parciais: Especificação técnica  
+- ❌ Pendentes: Riscos  
+**Recomendação SAAB:** incluir matriz de riscos e cláusulas ESG.
+
+---
+
+## 🧠 Características do Agente_TR
+
+| Tipo | Função |
+|------|--------|
+| 🧭 **Normativo** | Cita dispositivos legais e manuais oficiais. |
+| 💬 **Interativo** | Conduz o usuário passo a passo. |
+| 🔍 **Analítico** | Identifica lacunas e riscos. |
+| 🧾 **Auditável** | Registra respostas com status (✅ / ⚠️ / ❌). |
+| 🤝 **Colaborativo** | Sugere exemplos e boas práticas. |
+
+---
+
+## 💡 Exemplo de Diálogo Simulado
+
+**Agente_TR:** “Boa tarde! Vamos elaborar o Termo de Referência. Você já possui um ETP aprovado?”  
+**Usuário:** “Sim, é o ETP de serviços de vigilância.”  
+**Agente_TR:** “Perfeito. Qual é o objeto da contratação?”  
+**Usuário:** “Prestação de serviços de vigilância patrimonial armada e desarmada.”  
+**Agente_TR:** “Excelente. Essa descrição atende ao art. 40, I, da Lei 14.133/21. Agora, quais são os requisitos técnicos mínimos?”  
+
+📄 **Resumo Final:**  
+✅ Prontos: Objeto, Justificativa, Custos  
+⚠️ Parciais: Critérios de julgamento  
+❌ Pendentes: Riscos
+
+---
+
+## 🏗️ Saída e Formatos
+
+O Agente_TR oferece:
+- **Geração textual estruturada** (formato Markdown ou Word)  
+- **Arquivo .docx** no padrão institucional SAAB/TJSP  
+
+---
+
+## 🌎 Publicação no GitHub Pages
+
+Este repositório inclui `/docs/index.html`.  
+No GitHub, ative **Settings → Pages → Deploy from branch → /docs**.  
+A URL gerada (ex.:  
+`https://cdmattostjsp-sys.github.io/tjsp-tr-biblioteca-publica/`)  
+será utilizada como **fonte de conhecimento** pelo Copilot Studio.
+
+---
+
+## 💬 Exemplos de Solicitações (para Copilot Studio)
+
+| Título | Mensagem |
+|--------|-----------|
+| ✍️ Iniciar novo TR | “Quero iniciar um Termo de Referência (TR) do zero.” |
+| 🔁 Gerar TR a partir de ETP | “Tenho um ETP aprovado e quero gerar o TR correspondente.” |
+| 🏗️ TR de Obras | “Preciso elaborar o TR para uma reforma predial.” |
+| 💻 TR de TI | “Gerar TR para aquisição de software SaaS.” |
+| 🧹 TR de Serviços Continuados | “Quero o TR para renovação de contrato de limpeza.” |
+| 🧾 Revisar TR existente | “Verifique se meu TR atende à Lei 14.133/21.” |
+| ⚙️ Diagnóstico de Conformidade | “Classifique meu TR em ✅ / ⚠️ / ❌ com base nas normas.” |
+
+---
+
+## 📚 Referências
+
+Lei nº 14.133/2021 – arts. 6º, 18, 40, 42, 92, 117 e 118  
+Decreto Estadual nº 67.381/2022 – arts. 11, 23, 33–38  
+Provimento CSM nº 2.724/2023 – Governança das Contratações  
+Manual de Licitações TJSP (2025) – Cap. 2, p. 30–46  
+Guia MGI (2025) – Seção 4.3  
+Checklists SAAB (2025)
+
+---
+
+## 🔗 Uso pelo Copilot Studio
+
+- **Nome do agente:** `Agente_TR – SAAB 5.2`  
+- **Descrição:** Assistente normativo do TJSP para elaboração e validação do Termo de Referência (TR).  
+- **Fonte de conhecimento:**  
+  `https://cdmattostjsp-sys.github.io/tjsp-tr-biblioteca-publica/`
+
+> “O Termo de Referência é o elo entre o planejamento e a execução contratual. Sua qualidade técnica e legal garante a eficiência da despesa pública.”  
+> — **SAAB / TJSP – 2025**
+EOF
 
